@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonGrey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/dim_16</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textFontWeight">500</item>
+        <item name="backgroundTint">@color/glass</item>
+        <item name="background">@drawable/background_dark_grey</item>
+    </style>
+
+    <style name="ButtonGreen">
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:textSize">@dimen/text_14</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textFontWeight">500</item>
+        <item name="backgroundTint">@color/green</item>
+        <item name="background">@drawable/background_green</item>
+    </style>
+</resources>

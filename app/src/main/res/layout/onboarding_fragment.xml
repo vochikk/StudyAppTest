@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/onboardingFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/topLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+
+    <TextView
+        android:id="@+id/onboardTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/onboard_title"
+        android:textColor="@color/white"
+        android:textFontWeight="400"
+        android:textSize="@dimen/text_28"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topLine" />
+
+    <HorizontalScrollView
+        android:id="@+id/firstLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_24"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/onboardTitle">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/c_administration"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:rotation="-15"
+                android:text="@string/rabbitMQ"
+                android:backgroundTint="@color/green"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/traffic"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/secondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/content_marketing"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/b2b_marketing0"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/google_analitics"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/thirdLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/secondLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/UX_researcher"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/Web_analitics"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:rotation="15"
+                android:text="@string/big_data"
+                android:backgroundTint="@color/green"/>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/fourthLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/thirdLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/gamedesign"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/web_design"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/cinema_4d"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/promt_engineering"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/fifthLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dim_8"
+        android:scrollbars="none"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fourthLine">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/webflow"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:rotation="-15"
+                android:text="@string/three_js"
+                android:backgroundTint="@color/green"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/parsing"/>
+
+            <Button
+                style="@style/ButtonGrey"
+                android:text="@string/python_develop"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dim_32"
+        android:layout_marginHorizontal="@dimen/dim_16"
+        style="@style/ButtonGreen"
+        android:text="@string/continue_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
